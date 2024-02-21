@@ -1,0 +1,39 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows:  50px 500px 50px;
+   background-color: white;
+   grid-template-areas: 
+   "h h h h h h h h h h h h"
+   "m m m c c c c c c c c c"
+   "f f f f f f f f f f f f";
+   color:white;
+   font-size: 50px;
+   text-align: center;
+  padding: 10px;
+  gap: 10px;
+  margin: 0 auto;
+
+}
+.header{
+   
+    grid-area: h;
+    background-color: rgb(51, 71, 66);
+    
+}
+.menu{
+    grid-area: m;
+    background-color: chocolate;
+    padding-top: 200px;
+}
+.footer{
+   
+    grid-area: f;
+    background-color: rgb(34, 31, 32);
+}
+.content{
+    grid-area: c;
+    background-color: darkslategrey;
+    padding-top: 200px;
+    
+}
